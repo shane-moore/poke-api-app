@@ -1,0 +1,26 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#root .container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "mcLaren", cursive;
+}
+#root .container .card {
+  margin: 1rem;
+  border: 1px solid gray;
+  background-color: magenta;
+}
+@media screen and (min-width: 600px) {
+  #root .container .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 900px) {
+  #root .container .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
